@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorOffWhite">
+
+    <RelativeLayout
+        android:id="@+id/relLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relLayoutMiddle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/relLayoutBottom">
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/transparent_gradient"
+            android:layout_height="match_parent">
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relLayoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true">
+
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/bottomNavView_Bar"
+                android:layout_width="350dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_grey_border_bottom"
+                app:itemIconTint="@color/drawer_item"
+                app:itemTextColor="@color/drawer_item"
+                app:labelVisibilityMode="unlabeled"
+                app:menu="@menu/bottom_navigation_menu"
+                android:layout_marginBottom="10dp">
+
+
+
+
+            </android.support.design.widget.BottomNavigationView>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
